@@ -107,7 +107,7 @@
         <h1>Prueba de Integración</h1>
         <p>Completa tus datos para probar la conexión con el CRM.</p>
 
-        <form name="contacto-hubspot" method="POST" data-netlify="true">
+        <form name="contacto-hubspot" method="POST" action="/success.html">
             <div class="form-group">
                 <label for="firstname">Nombre</label>
                 <input type="text" name="firstname" id="firstname" placeholder="Tu nombre" required>
@@ -123,8 +123,8 @@
                 <input type="text" name="company" id="company" placeholder="Nombre de tu empresa">
             </div>
 
-            <button type="submit">Enviar a HubSpot</button>
-        </form>
+            <input type="submit" value="Enviar a HubSpot">
+            </form>
 
         <p class="footer-note">Los datos enviados se procesarán para la prueba de integración.</p>
     </div>
