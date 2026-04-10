@@ -154,6 +154,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <button type="button" id="btn-prueba-clase" class="btn-primary">
         probar analytics
     </button>
+
+        <button type="button" id="btn-color-magic" class="btn-secondary">
+    Cambiar color de fondo
+</button>
+
+<script>
+    // Un pequeño script para que el botón realmente haga algo visual
+    document.getElementById('btn-color-magic').addEventListener('click', function() {
+        const colors = ['#f4f4f9', '#e8f5e9', '#fff3e0', '#e3f2fd', '#fce4ec'];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.backgroundColor = randomColor;
+    });
+</script>
         <p class="footer-note">Los datos enviados se procesarán para la prueba de integración.</p>
     </div>
 
